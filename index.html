@@ -3,22 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TEST2</title>
+  <title>Shilux</title>
+  <meta name="description" content="The Shilux website quietly reflects the beauty of nature, vintage cars, and high-quality vintage items that transcend time." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <h1>My First Web</h1>
-    <p>TEST2</p>
-  </header>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">Shilux</div>
+      <nav class="site-nav">
+        <a href="#concept">Concept</a>
+        <a href="#gallery">Collection</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
 
-  <main class="container">
-    <section class="card">
-      <h2>TEST2</h2>
-      <p></p>
-      <button id="helloBtn">押してみる</button>
-    </section>
-  </main>
+    <main>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Quiet luxury for timeless souls</p>
+          
+          <p class="lead">
+            The deep shadows of the forest, classic cars cutting through the wind, and vintage items that are loved across generations. We have carefully gathered together the warmth of beauty in a tranquil atmosphere.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#gallery">View the collection</a>
+            <a class="button button-secondary" href="#about">To understand the worldview</a>
+          </div>
+        </div>
+        <div class="hero-cards">
+          <article class="glass-card tall">
+            <span class="card-label">Vintage Cars</span>
+            
+            <p>The body lines, which have stood the test of time, possess a quiet dignity that newer cars lack.</p>
+          </article>
+          <article class="glass-card">
+            <span class="card-label">Nature</span>
+            <p>Sunlight filtering through the trees, mist, the scent of earth. An aesthetic sense where the background, too, contributes to the overall value.</p>
+          </article>
+          <article class="glass-card">
+            <span class="card-label">Vintage Goods</span>
+            <p>The brand offers bags and accessories imbued with its history, presented with a sense of spaciousness and understated elegance.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="concept" class="section intro-grid">
+        <article class="panel panel-dark">
+          <p class="mini-title">Concept</p>
+          <h2>Not overly assertive, yet memorable.</h2>
+          <p>
+            Rather than loudly proclaiming its name, Shilux aimed to create a website that leaves a strong impression through its atmosphere. Deep greens, smoky browns, and muted golds—these understated tones express the "quiet strength" of nature and a vintage aesthetic.
+          </p>
+        </article>
+        <article class="panel panel-image forest-card">
+          <div class="panel-copy">
+            <p class="mini-title">Mood</p>
+            <h3>A soft, luxurious feel, as if standing in a misty forest.</h3>
+          </div>
+        </article>
+      </section>
+
+      <section id="gallery" class="section gallery-section">
+        <div class="section-heading">
+          <p class="mini-title">Collection</p>
+          <h2>Nature, cars, brand archives.</h2>
+        </div>
+        <div class="gallery-grid">
+          <article class="gallery-card canyon">
+            <div>
+              <span>01</span>
+              <h3>Vintage Drive</h3>
+              <p>A subdued paint job, a long nose, and heavy chrome accents. A presence that is completed in harmony with the surrounding scenery.</p>
+            </div>
+          </article>
+          <article class="gallery-card leather">
+            <div>
+              <span>02</span>
+              <h3>Archive Pieces</h3>
+              <p>The charm of vintage brand items lies in the fact that the changes that occur over time tell a story.</p>
+            </div>
+          </article>
+          <article class="gallery-card forest">
+            <div>
+              <span>03</span>
+              <h3>Natural Silence</h3>
+              <p>Deep green and tranquility serve as the base colors that support the overall worldview.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="about-copy">
+          <p class="mini-title">About</p>
+          <h2>Shilux</h2>
+          <p>
+            Rather than flashy or attention-grabbing, this brand exists as a refined backdrop.
+             It brings together the beautiful shadows of vintage cars, the tranquility of nature, and the historical depth of branded goods, creating a serene and harmonious landscape.
+          </p>
+        </div>
+        <div class="stats-card">
+          <div class="stat">
+            <strong>Nature</strong>
+            <span>Deep green / Fog / Evening scenery</span>
+          </div>
+          <div class="stat">
+            <strong>Cars</strong>
+            <span>Classic / Chrome / Substantial feel</span>
+          </div>
+          <div class="stat">
+            <strong>Archive</strong>
+            <span>Bags / Leather / Vintage Accessories</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <script src="app.js"></script>
 </body>
